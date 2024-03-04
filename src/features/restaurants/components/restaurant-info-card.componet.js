@@ -45,7 +45,7 @@ const SectionEnd = styled.View`
   justify-content: flex-end;
 `;
 const ClosedTemporarilyText = styled.View`
-  margin-right: ${(props) => props.theme.space[3]}; /* Adjust the margin as needed */
+  margin-right: ${(props) => props.theme.space[3]};
 `;
 
 export const RestuarantInfoCard = ({ restaurant = {} }) => {
@@ -80,10 +80,12 @@ export const RestuarantInfoCard = ({ restaurant = {} }) => {
                 </Text>
               )}
             </ClosedTemporarilyText>
-            <Spacer variant="left.large" />
-            {isOpenNow && <SvgXml xml={icon} width={20} height={20} />}
-            <Spacer variant="left.large" />
-            <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            <Spacer position="left" size="large">
+              {isOpenNow && <SvgXml xml={icon} width={20} height={20} />}
+            </Spacer>
+            <Spacer position="left" size="large">
+              <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            </Spacer>
           </SectionEnd>
         </Section>
         <Address>{address}</Address>
