@@ -27,7 +27,7 @@ export const RestuarantInfoCard = ({ restaurant = {} }) => {
     name = "Hummus Bean Dip",
     icon = open,
     photos = ["https://picsum.photos/700"],
-    address = "100 some random Street New York NY",
+    address = "200 some random Street New York NY",
     isOpenNow = true,
     rating = 4,
     isClosedTemporarily = true,
