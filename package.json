@@ -17,6 +17,7 @@
     "@react-navigation/bottom-tabs": "^6.5.18",
     "@react-navigation/native": "^6.1.15",
     "@types/node": "^20.11.19",
+    "camelize": "^1.0.1",
     "expo": "^49.0.0",
     "expo-font": "~11.4.0",
     "expo-modules-autolinking": "~1.5.0",

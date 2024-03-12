@@ -4,6 +4,8 @@ import { ThemeProvider } from "styled-components/native";
 import { Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
+import { RestaurantRequest } from "./src/services/restaurant/restaurants.service";
+
 import {
   useFonts as useOswald,
   Oswald_400Regular,
@@ -22,7 +24,6 @@ const TAB_ICON = {
   Map: "md-map",
   Settings: "md-settings",
 };
-
 
 const RestaurantScreen = () => {
   return <RestuarantsScreen />;
@@ -44,7 +45,6 @@ const MapScreen = () => {
   );
 };
 
-// eslint-disable-next-line no-undef
 const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
   return {
