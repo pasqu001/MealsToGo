@@ -22,7 +22,7 @@ import {
   ClosedTemporarilyText,
 } from "./restaurant-info-card.styles";
 
-export const RestuarantInfoCard = ({ restaurant = {} }) => {
+export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Hummus Bean Dip",
     icon = open,
